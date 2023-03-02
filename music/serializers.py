@@ -7,5 +7,4 @@ from .models import Songs
 class Serializer (serializers.ModelSerializer):
     class Meta:
         model = Songs
-        field = ['title', 'artist','album','release_date','genre']
-        depth = 1
+        fields = ['title', 'artist','album','release_date','genre', 'id']
